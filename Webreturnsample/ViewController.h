@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
+#import <AudioToolbox/AudioToolbox.h>
+
 
 @interface ViewController : UIViewController
-
+//UIImageViewのプロパティ
+@property (weak, nonatomic) IBOutlet UIImageView *imageview;
+//声を聞くというボタンを押すと呼ばれるメソッド
+- (IBAction)voice:(id)sender;
 
 @end
 

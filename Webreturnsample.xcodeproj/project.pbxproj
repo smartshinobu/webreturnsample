@@ -14,6 +14,9 @@
 		87CAF0781A01283C0076596F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87CAF0771A01283C0076596F /* Images.xcassets */; };
 		87CAF07B1A01283C0076596F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87CAF0791A01283C0076596F /* LaunchScreen.xib */; };
 		87CAF0871A01283D0076596F /* WebreturnsampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 87CAF0861A01283D0076596F /* WebreturnsampleTests.m */; };
+		87CAF0921A0128AA0076596F /* Webreturn.m in Sources */ = {isa = PBXBuildFile; fileRef = 87CAF0901A0128AA0076596F /* Webreturn.m */; };
+		87CAF0941A012AC60076596F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87CAF0931A012AC60076596F /* AVFoundation.framework */; };
+		87CAF0961A012ACD0076596F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87CAF0951A012ACD0076596F /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,10 @@
 		87CAF0801A01283D0076596F /* WebreturnsampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebreturnsampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		87CAF0851A01283D0076596F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87CAF0861A01283D0076596F /* WebreturnsampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebreturnsampleTests.m; sourceTree = "<group>"; };
+		87CAF0901A0128AA0076596F /* Webreturn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Webreturn.m; path = ../../../Webreturn.m; sourceTree = "<group>"; };
+		87CAF0911A0128AA0076596F /* Webreturn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Webreturn.h; path = ../../../Webreturn.h; sourceTree = "<group>"; };
+		87CAF0931A012AC60076596F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		87CAF0951A012ACD0076596F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +54,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87CAF0961A012ACD0076596F /* AudioToolbox.framework in Frameworks */,
+				87CAF0941A012AC60076596F /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +72,8 @@
 		87CAF05E1A01283C0076596F = {
 			isa = PBXGroup;
 			children = (
+				87CAF0951A012ACD0076596F /* AudioToolbox.framework */,
+				87CAF0931A012AC60076596F /* AVFoundation.framework */,
 				87CAF0691A01283C0076596F /* Webreturnsample */,
 				87CAF0831A01283D0076596F /* WebreturnsampleTests */,
 				87CAF0681A01283C0076596F /* Products */,
@@ -81,6 +92,8 @@
 		87CAF0691A01283C0076596F /* Webreturnsample */ = {
 			isa = PBXGroup;
 			children = (
+				87CAF0901A0128AA0076596F /* Webreturn.m */,
+				87CAF0911A0128AA0076596F /* Webreturn.h */,
 				87CAF06E1A01283C0076596F /* AppDelegate.h */,
 				87CAF06F1A01283C0076596F /* AppDelegate.m */,
 				87CAF0711A01283C0076596F /* ViewController.h */,
@@ -219,6 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87CAF0921A0128AA0076596F /* Webreturn.m in Sources */,
 				87CAF0731A01283C0076596F /* ViewController.m in Sources */,
 				87CAF0701A01283C0076596F /* AppDelegate.m in Sources */,
 				87CAF06D1A01283C0076596F /* main.m in Sources */,
@@ -412,6 +426,7 @@
 				87CAF08C1A01283D0076596F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		87CAF08D1A01283D0076596F /* Build configuration list for PBXNativeTarget "WebreturnsampleTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +435,7 @@
 				87CAF08F1A01283D0076596F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
